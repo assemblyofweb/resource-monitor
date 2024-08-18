@@ -1,0 +1,99 @@
+.pageArea {
+  padding: 20px;
+  margin-left: 85px; /* Start with margin adjusted for closed navbar */
+  transition: margin-left 0.3s ease;
+  background-color: #1b222b; /* Body background */
+  border-radius: 6px;
+  color: #f5f5f5;
+}
+
+.pageArea.open {
+  margin-left: 300px; /* Adjusts for open navbar */
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pageBody {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1; /* Ensure the group takes equal space */
+  min-width: 250px; /* Ensure responsive design */
+}
+
+.formLabel {
+  font-size: 1rem;
+  color: #bbbbbb;
+}
+
+.form-group input[type='text'],
+.form-group input[type='number'],
+.form-group select,
+.form-group textarea,
+.form-group .timepicker-input {
+  /* Added timepicker-input for TimePicker */
+  background-color: #242c35; /* Background color for inputs */
+  color: #f5f5f5; /* Text color */
+  border: 1px solid #424b53; /* Border color */
+  padding: 10px; /* Padding inside the inputs */
+  border-radius: 4px; /* Rounded corners */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.form-group input[type='text']::placeholder,
+.form-group input[type='number']::placeholder,
+.form-group textarea::placeholder {
+  color: #aaaaaa; /* Placeholder text color */
+}
+
+.form-group select {
+  appearance: none; /* Remove default arrow for custom styling */
+}
+
+.subSection {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.btn-primary {
+  background-color: #007acc; /* Primary button color */
+  border-color: #007acc;
+}
+
+.btn-primary:hover {
+  background-color: #005fa3; /* Darker shade on hover */
+}
+
+.btn-link {
+  background-color: transparent;
+  color: #007acc; /* Primary color for link buttons */
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #007acc; /* Primary color for border */
+}

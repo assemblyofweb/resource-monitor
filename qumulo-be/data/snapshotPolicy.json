@@ -1,0 +1,13 @@
+{
+  "projectName": "My Project1",
+  "directoryName": "My Directory1",
+  "scheduleTime": "daily",
+  "timeZone": "America/Los_Angeles",
+  "days": [
+    "everyDay"
+  ],
+  "deletePolicy": "automaticallyAfter",
+  "deleteAfterDays": 30,
+  "enableLockedSnapshots": true,
+  "enablePolicy": true
+}

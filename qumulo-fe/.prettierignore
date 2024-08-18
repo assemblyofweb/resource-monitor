@@ -1,0 +1,11 @@
+config
+.next
+dist
+build
+_build
+lib
+node_modules
+release
+temp
+/package.json
+/package-lock.json

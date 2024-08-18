@@ -1,0 +1,121 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 85px;
+  height: 100%;
+  background-color: #242c35; /* Secondary color for NavBar background */
+  color: #fff;
+  border-right: 1px solid #424b53; /* Border color */
+  transition: width 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between content and user details */
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.navbar * {
+  color: #fff;
+}
+.navbar ul {
+  margin: 0;
+}
+.navbar.open {
+  width: 300px;
+}
+
+.logoContainer {
+  margin-top: 20px;
+  &.open {
+    margin: 20px auto auto;
+  }
+}
+
+.logo {
+  height: 60px;
+  width: auto; /* Maintain aspect ratio */
+}
+
+.toggleButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.toggleButton img {
+  height: 60px;
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0; /* Ensure the content is aligned */
+  width: 100%;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.navItem {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  color: #f5f5f5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navLink:hover {
+  background-color: #424b53; /* Border color on hover */
+}
+
+.navIcon {
+  height: 60px;
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 10px;
+}
+
+.userInfo {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.userIconContainer {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.userIcon {
+  height: 60px;
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Ensures consistent padding around images in the collapsed view */
+.navbar img {
+  padding: 10px 0 10px 20px;
+}
